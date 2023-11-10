@@ -41,10 +41,16 @@ export default function Login() {
             alert('로그인 실패')
         })
     }
+
+    const SignUp = e => {   // 회원가입 페이지로 이동
+        navigate('/findid') 
+    }
+
     return (
+        <>
         <div className="Loginpage">
             <Header/>
-             <div className="Loginpage-loginbox">
+            <div className="Loginpage-loginbox">
                 <h1 className="Loginpage-loginbox__title">login</h1>
             </div>
             <div className="Loginpage-loginform">
@@ -64,7 +70,9 @@ export default function Login() {
                     </div>
                 </div>
                 <input type="submit" className="signinbtn" onClick={Signin} value={'로그인'}/>
+                <input type="button" className="signupbtn" onClick={SignUp} value={'회원가입'}/>
             </div>
         </div>
+        </>
     )
 }

@@ -5,6 +5,7 @@ import Mainpage from './pages/Mainpage';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Donation from './pages/Donation';
+import FindId from './pages/FindId';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>   
         <Route path='/donation' element={<Donation/>}/> 
+        <Route path='/findid' element={<FindId/>}/> 
       </Routes>
     </BrowserRouter>
   );
